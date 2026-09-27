@@ -193,6 +193,7 @@ class child : public Father , public Mother{
 class Base
 {
     public:
+    // hidden vptr --> size of vptr --> it depends on arch 32bit --> 4 bytes 64 bit --> 8 bytes 
     virtual void show()
     {
         cout<< " abse show()"<<endl;
@@ -235,5 +236,6 @@ int main()
     Derived d;
     d.show(); // derived 
     d.show(10); //
+    cout<<sizeof(Base)<<endl;
     // c.type = "Lorry";  u cannot access in main becaue Vehicle is inherited as a protected
 }

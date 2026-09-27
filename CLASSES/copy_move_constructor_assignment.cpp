@@ -76,16 +76,15 @@ int main()
     int *p = &z;
     int o = z+30;
 
+    // reference and r value reference
     int &ref = z;
-
     // int &ref1 = 30;  // u cant assign temp values
-
     int &&ref2 = 40;  // only to assign temporary values 
     // int &&ref2 = z; /// it wont work
     int && ref3 = std::move(z);
+
+
     cout<<z<<endl;
-
-
     Number x(30);
 
     // x=n; /// copy wont work because i already moved the n obj to obj1  

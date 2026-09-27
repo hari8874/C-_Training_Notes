@@ -30,16 +30,14 @@ class Base
         // al=20;
         // c='s';
     }
+
     // Base(int n, char c)
     // {
     //     al=n;
     //     c=c;
     // }
     Base(int n, char z):al(n),c(z){}
-    Base (const Base &other)
-    {
-        
-    }
+    Base (const Base &other):al(other.al),c(other.c){}
     void Print()
     {
         cout<< al << "  "<<c <<endl;

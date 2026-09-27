@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// SIZE OF AN EMPTY CLASS WILL BE 1
+
 class Base
 {
     public:

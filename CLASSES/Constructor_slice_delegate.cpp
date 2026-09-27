@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// calling one constructor from another constructor is called constructor delegation
 class Base
 {
 public:

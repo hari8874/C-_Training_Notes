@@ -19,7 +19,7 @@ class Rectangle
 int main()
 {
 
-    // Aggregateb intializatoin
+    // Aggregateb intializatoin or unifrom initialization
     // it will not work if variables are private
     Rectangle rec{13,14,15};
     Rectangle rec1{13,18};

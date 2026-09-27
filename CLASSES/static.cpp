@@ -21,21 +21,21 @@ class Static
     }
 };
 int Static::x = 20;
-// static int y = 0;
-// void counter()
-// {
-//     static int x = 0;
-//     x++;
-//     // y++;
-//     cout<<x<<endl;
-//     // cout<<y<<endl;
-// }
+static int y = 0;
+void counter()
+{
+    static int x = 0;
+    x++;
+    // y++;
+    cout<<x<<endl;
+    // cout<<y<<endl;
+}
 int main()
 {
-    // // cout<<x<<endl;
-    // counter();
-    // counter();
-    // counter();
+    // cout<<x<<endl;
+    counter();
+    counter();
+    counter();
 
     // static types  
     // local static variable 

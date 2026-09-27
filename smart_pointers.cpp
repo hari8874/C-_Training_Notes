@@ -117,7 +117,7 @@ int main()
     objx.reset(new int(20));
 
 
-    // task
+    // ASSINMENT
 
     // shared_ptr : ownership can be shared ;
     // shared_ptr<int> p1; // ref strong count 1
