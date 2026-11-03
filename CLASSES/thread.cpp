@@ -9,23 +9,19 @@ int counter = 100;
 
 void increment()
 {
-    // m1.lock();
     lock_guard<std::mutex> lock(m1); 
     for(int i=0;i<100000;i++)
     {
         counter++;
     }
-    // m1.unlock();
 }
 void decrement()
 {
-    // m1.lock();
     lock_guard<std::mutex> lock(m1);
     for(int i=0;i<100000;i++)
     {
       counter--;
     }
-    // m1.unlock();
 }
 void display()
 {
